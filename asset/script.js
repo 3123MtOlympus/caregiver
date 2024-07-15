@@ -1,7 +1,10 @@
-const reviewsContainer = document.getElementById('reviews-container');
+
+        const reviewsContainer = document.getElementById('reviews-container');
         const prevBtn = document.getElementById('prev-btn');
         const nextBtn = document.getElementById('next-btn');
         const submitReviewBtn = document.getElementById('submit-review');
+        const modal = document.getElementById('modal');
+        const closeModalBtn = document.getElementById('close-modal');
         let scrollAmount = 0;
 
         function scrollReviews(direction) {
@@ -35,8 +38,21 @@ const reviewsContainer = document.getElementById('reviews-container');
             newReview.innerHTML = `<p>${reviewText}</p><small>Submitted on: ${timestamp}</small>`;
             reviewsContainer.prepend(newReview);
             document.getElementById('new-review').value = '';
+
+            // Show modal
+            modal.style.display = 'flex';
         }
 
         nextBtn.addEventListener('click', () => scrollReviews('next'));
         prevBtn.addEventListener('click', () => scrollReviews('prev'));
         submitReviewBtn.addEventListener('click', addReview);
+        closeModalBtn.addEventListener('click', () => {
+            modal.style.display = 'none';
+        });
+
+       // Close the modal when clicking outside of the modal content
+       window.addEventListener('click', (event) => {
+        if (event.target === modal) {
+            modal.style.display = 'none';
+        }
+    });
