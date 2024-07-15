@@ -3,12 +3,13 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #672b2b;
+    background-color: #33333388;
 }
 .container {
-    width: 80%;
+    /* width: 80%; */
     margin: 0 auto;
     padding: 20px;
+    
 }
 .section {
     padding: 20px;
@@ -92,7 +93,7 @@ body {
     background-color: #632626;
     color: #fff;
     border: none;
-    border-radius: 5px;
+    border-radius: 10px;
     cursor: pointer;
 }
 .review-nav {
@@ -107,4 +108,40 @@ body {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+}
+
+.section-introduction {
+background-color: #e6ffe6;
+/* width: 80%; */
+margin: 0 auto;
+padding: 20px;
+font-size: smaller;
+}
+
+.navbar {
+    background-color: #333;
+    padding: 10px;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar li {
+    margin: 0;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+.navbar a:hover {
+    background-color: #575757;
 }
