@@ -4,19 +4,19 @@ body {
     padding: 0;
     background-color: #33333388;
 }
-/* .container {
+.container {
     margin: 0 auto;
     padding: 20px;
     
-} */
+}
 .section {
     padding: 20px;
     margin-bottom: 0px;
     border: 1px solid #ccc;
     border-radius: 10px, inset (3px 3px 3px purple);
 }
+
 .about-me {
-    background-color: #f0f8ff;
     border-bottom: 10px solid transparent;
     border-image: linear-gradient(to bottom, #f0f8ff, #f9f9f9);
     border-image-slice: 1;
@@ -113,8 +113,8 @@ body {
 } */
 
 .section-introduction {
-/* width: 80%; */
-margin: 0 auto;
+width: 100%;
+/* margin: 0 auto; */
 padding: 0px;
 font-size: smaller;
 }
@@ -151,11 +151,8 @@ font-size: smaller;
     width: 100%;
 } */
 
+.intro-img,
+.about-me-img,
 .review-img {
 width: 100%;
-
-}
-
-.intro-img{
-    width: 100%;
 }
