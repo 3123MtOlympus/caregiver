@@ -21,7 +21,7 @@ body {
 .about-me {
     border-bottom: 10px solid transparent;
     border-image: linear-gradient(to bottom, #f0f8ff, #f9f9f9);
-    border-image-slice: 1;
+    background-image: url(/caregiver/asset/images/Ausome\ Life\ Coach/3.png);
 }
 
 /* .reviews {
