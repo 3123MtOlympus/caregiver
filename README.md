@@ -1,7 +1,3 @@
-Certainly! Below is a sample README file for your Autism Caregiver Provider web page:
-
----
-
 # Autism Caregiver Provider Web Page
 
 This project is a simple one-page website for an autism caregiver provider. The page includes sections for information about the caregiver, a carousel for reviews, and a contact form. Users can also submit new reviews which will appear at the beginning of the reviews list.
