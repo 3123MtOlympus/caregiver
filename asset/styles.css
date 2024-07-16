@@ -169,11 +169,12 @@ body {
 .review-img {
     width: 100%;
 }
+
 .intro-img,
 .aboutMe-img {
     width: 100%;
     height: 100%;
-    
+
 }
 
 .aboutMeCap {
@@ -223,7 +224,7 @@ body {
     text-shadow: 1px 1px #6326264a;
 }
 
-p{
+p {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: #4e5a4e;
 }
@@ -247,25 +248,29 @@ p{
     position: relative;
     overflow: hidden;
 }
-#introduction{
+
+#introduction {
     margin: 0 auto;
 }
 
 .section .content {
     position: relative;
     z-index: 2;
-    color: #fff; /* Ensures text is readable */
+    color: #fff;
+    /* Ensures text is readable */
     padding: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
-    height: 100vh; /* Full viewport height */
+    height: 100vh;
+    /* Full viewport height */
 }
 
 /* Position h1 and h4 absolutely within the content div */
-.section .content h1, .section .content h4 {
+.section .content h1,
+.section .content h4 {
     position: absolute;
     top: 20%;
     left: 50%;
@@ -274,7 +279,8 @@ p{
 }
 
 .section .content h4 {
-    top: 30%; /* Adjust as needed to position below the h1 */
+    top: 30%;
+    /* Adjust as needed to position below the h1 */
 }
 
 .section.introduction {
@@ -285,24 +291,60 @@ p{
 }
 
 .section.introduction .content p {
-    margin-top: 60px; /* Adjust as needed to position below the h4 */
+    margin-top: 60px;
+    /* Adjust as needed to position below the h4 */
 }
 
 .section.introduction {
-    height: 100vh; /* Full viewport height */
+    height: 100vh;
+    /* Full viewport height */
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
 }
-h1,h4{
+
+h1,
+h4 {
     color: #f0f8ff;
     margin: 0 auto;
     text-align: center;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-#intro-container{
+#intro-container {
     width: 80%;
     margin: 0 auto;
+}
+
+.section-events{
+    background-color: #f0f8ff;
+    height: 1200px;
+}
+.event {
+    margin: 0 auto;
+    text-align: center;
+    font-family: serif;
+    background-color: #f0f8ff;
+}
+
+.invite-btn {
+    border: 2px solid #e6ffe6;
+    border-radius: 5px;
+    padding: 4px 20px;
+    background-color: #ed4b4b;
+    color: aliceblue;
+    box-shadow: 3px 3px #1e5f1e87;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 800;
+}
+
+h2 {
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+}
+.section-contact{
+    margin: 0 auto;
+    background: ;
 }
