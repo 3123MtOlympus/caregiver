@@ -16,19 +16,20 @@
             <li><a href="#about-me">About Me</a></li>
             <li><a href="#reviews">Reviews</a></li>
             <li><a href="#contact">Contact</a></li>
+            <li><a href="#events">Upcoming Events</a></li>
         </ul>
     </nav>
 
-    <section class="section-introduction">
+    <section class="section-introduction" id="introduction">
 
         <video autoplay muted loop id="background-video">
             <source src="/caregiver/asset/images/Ausome Life Coach/Ausome life coach.mp4" type="video/mp4">
             Your browser does not support the video tag.
             <div>
-                
-              </div>
+
+            </div>
         </video>
-        
+
         <!-- <div class="content">
             <h1> Ausome Life Coach</h1>
             <h4> Highlight Abilities<br> Develop Confidence</h4>
@@ -42,14 +43,14 @@
                 Autism is a complex neurodevelopmental disorder that affects individuals in diverse ways, resulting in a wide spectrum of challenges and strengths. Each person on the autism spectrum is unique, requiring tailored support that addresses their specific needs. Finding the right caregiver is crucial, as it can significantly impact the individual's development, well-being, and overall quality of life. The right caregiver not only provides essential support but also fosters an environment of trust, understanding, and empowerment.
             </p>
         </div> -->
-           
+
     </section>
 
     <!-- ABOUT ME -->
-    <section class="section-about-me">
+    <section class="section-about-me" id="about-me">
 
         <div class="container">
-       
+
             <div class="aboutMe-container">
                 <div class="aboutMeImg">
                     <img class="aboutMe-img" src="/caregiver/asset/images/Ausome Life Coach/6.jpeg">
@@ -59,10 +60,12 @@
                 <div class="aboutMeCap">
                     <div class="aboutMeImgCap">
                         <p id="captionAboutMe">
-                            "Like the Grand Canyon, great achievements are not built overnight.<br> They are carved by time, perseverance, and unwavering determination."
+                            "Like the Grand Canyon, great achievements are not built overnight.<br> They are carved by
+                            time, perseverance, and unwavering determination."
                         </p>
                     </div>
-                    <p> Hi! <br> My name is Chris Carter and I've been apart of the autism community since 2011, I have dedicated myself to supporting individuals with autism, working extensively
+                    <p> Hi! <br> My name is Chris Carter and I've been apart of the autism community since 2011, I have
+                        dedicated myself to supporting individuals with autism, working extensively
                         within school districts across Ventura County and Los Angeles County. My diverse experience
                         includes roles such as a para-professional, Registered Behavior Technician (RBT), Applied
                         Behavior Analysis (ABA) Therapist, special needs personal trainer, basketball coach, and in-home
@@ -73,18 +76,18 @@
                         of empowerment and positivity. By concentrating on the strengths and potential of each
                         individual, I aim to help them reach their fullest potential and lead fulfilling lives.</p>
                 </div>
-                
+
             </div>
             <button class="book-btn">Book Consultation</button>
-        
-        </section>
 
-        <!-- REVIEW SECTION -->
+    </section>
 
-        <section class="section-reviews">
-            <img class="review-img" src="asset/images/Ausome Life Coach/3.png">
+    <!-- REVIEW SECTION -->
 
-            <!-- <h2>Reviews</h2>
+    <section class="section-reviews" id="reviews">
+        <img class="review-img" src="asset/images/Ausome Life Coach/3.png">
+
+        <!-- <h2>Reviews</h2>
             <div class="reviews-container" id="reviews-container">
                 <div class="review">Review 1</div>
                 <div class="review">Review 2</div>
@@ -107,7 +110,7 @@
                 <textarea id="new-time" rows="1" placeholder="Date..." required></textarea>
                 <textarea id="new-review" rows="2" placeholder="Write your review here..." required></textarea>
                      -->
-            <!-- Modal
+        <!-- Modal
     <div id="modal" class="modal">
         <div class="modal-content">
             <p>Your review has been posted successfully!</p>
@@ -117,22 +120,48 @@
 
                 <button id="submit-review">Submit Review</button>
             </div> -->
-        </section>
+    </section>
 
-        <!-- CONTACT SECTION -->
+    <!-- CONTACT SECTION -->
 
-        <section class="section contact">
-            <h2>Contact Me</h2>
-            <form class="contact-form">
-                <label for="name">Name</label>
-                <input type="text" id="name" name="name" required>
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" required>
-                <label for="message">Message</label>
-                <textarea id="message" name="message" rows="5" required></textarea>
-                <button type="submit">Send Message</button>
-            </form>
-        </section>
+    <section class="section contact" id="contact">
+        <h2>Contact Me</h2>
+        <form class="contact-form">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <!-- EVENT SECTION-->
+
+    <section id="events" class="section events">
+        <h2>Upcoming Events</h2>
+        <div class="event">
+            <h3>Event Title 1</h3>
+            <p>Date: August 15, 2024</p>
+            <p>Description of the event goes here. This event will cover various topics related to autism care and
+                support.</p>
+            <a href="#!" class="invite-btn">Accept Invite</a>
+        </div>
+        <div class="event">
+            <h3>Event Title 2</h3>
+            <p>Date: September 10, 2024</p>
+            <p>Description of the event goes here. This event will include interactive sessions and guest speakers.</p>
+            <a href="#!" class="invite-btn">Accept Invite</a>
+        </div>
+        <div class="event">
+            <h3>Event Title 3</h3>
+            <p>Date: October 5, 2024</p>
+            <p>Description of the event goes here. This event aims to provide valuable insights and networking
+                opportunities.</p>
+            <a href="#!" class="invite-btn">Accept Invite</a>
+        </div>
+    </section>
     </div>
 </body>
 <script src="asset/script.js"></script>
