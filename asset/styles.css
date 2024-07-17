@@ -84,7 +84,7 @@ body {
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    width: 25%;
+    width: 95%;
     box-sizing: border-box;
 }
 
@@ -92,7 +92,7 @@ body {
 
 /* .review-form button  */
     {
-    margin: 10px;
+    margin: 0 auto;
     padding: 10px;
     background-color: #333;
     color: #fff;
@@ -317,10 +317,11 @@ h4 {
     margin: 0 auto;
 }
 
-.section-events{
+.section-events {
     background-color: #f0f8ff;
     height: 1200px;
 }
+
 .event {
     margin: 0 auto;
     text-align: center;
@@ -342,9 +343,40 @@ h4 {
 h2 {
     text-align: center;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    
+    color: aliceblue;
+    text-shadow: 2px 1px rgba(14, 13, 13, 0.382);
 }
-.section-contact{
+
+.section-contact {
     margin: 0 auto;
-    background: ;
+    background-color: grey;
+    background-size: cover;
+    justify-content: center;
+}
+
+form {
+    width: 45%;
+    justify-content: center;
+    margin: 0 auto;
+
+}
+
+h4 {
+    width: 55%;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+.availability-note {
+    width: 25%;
+    margin: 0 auto;
+    color: #f0f8ff;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.availability-note-container {
+    margin: 0 auto;
+    display: inline-flex;
+    justify-content: center;
+
 }
