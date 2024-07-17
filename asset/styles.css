@@ -179,8 +179,16 @@ body {
 
 .aboutMeCap {
     border: 1px solid #333;
-    border-radius: 1px 13px 13px 1px;
+    width: 75%;
     padding: 10px;
+}
+
+#about-me-paragraph{
+    padding: 20px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: small;
 }
 
 .container {
@@ -219,7 +227,7 @@ body {
     font-family: fantasy;
     margin: 0 auto;
     text-align: center;
-    padding: 50px;
+    padding: 40px;
     color: #4e5a4e;
     text-shadow: 1px 1px #6326264a;
 }
