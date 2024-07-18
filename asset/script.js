@@ -76,10 +76,18 @@ document.getElementById('submit-review').addEventListener('click', function() {
     }
 });
 
-// Modal
-const modal = document.getElementById('modal');
-const closeModalButton = document.getElementById('close-modal');
+function bookMonthlyPackage() {
+    alert("You have selected the Monthly Package. Proceed to payment.");
+    // Implement the booking logic here, e.g., redirect to payment page
+}
 
-closeModalButton.addEventListener('click', function() {
-    modal.style.display = 'none';
-});
+function bookIndividualSession() {
+    alert("You have selected an Individual Session. Proceed to payment.");
+    // Implement the booking logic here, e.g., redirect to payment page
+}
+
+function bookEmergencySession() {
+    alert("You have selected an Emergency Session. Only current members can book this session.");
+    // Implement the booking logic here, e.g., verify membership and redirect to booking page
+}
+

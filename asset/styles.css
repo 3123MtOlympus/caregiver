@@ -2,7 +2,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #33333388;
+    /* background-color: #33333388; */
 }
 
 .container {
@@ -24,38 +24,27 @@ body {
     background-image: url(/caregiver/asset/images/Ausome\ Life\ Coach/3.png);
 }
 
-/* .reviews {
-    background-color: #f9f9f9;
-    border-bottom: 10px solid transparent;
-    border-image: linear-gradient(to bottom, #f9f9f9, #e6ffe6);
-    border-image-slice: 1;
-    position: relative;
-} */
-.contact {
-    background-color: #e6ffe6;
+/* CONTACT SECTION ---------------------------------------------------------------- */
+
+#contact {
+background-image: url(/caregiver/asset/images/Ausome\ Life\ Coach/contact1.png);
+margin: 10px;
+
 }
 
-.section h2 {
-    margin-bottom: 20px;
-    color: #333;
-}
-
-.review:last-child {
-    margin-right: 0;
-}
-
-.contact-form{
-    padding: 5px;
+.contact-form {
+    padding: 12px;
     display: flex;
     flex-direction: column;
-    margin:  0 auto;
-    
+    margin: 0 auto;
+    margin-left: 800px;
+
 }
 
 
 .contact-form input,
 .contact-form textarea {
-    margin-bottom: 10px;
+    margin: 8px;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -142,11 +131,11 @@ body {
     box-shadow: 3px 3px 4px rgb(123, 135, 123);
 }
 
-#about-me-paragraph{
+#about-me-paragraph {
     padding: 20px;
     padding-bottom: 5px;
     padding-top: 5px;
-    font-family:sans-serif;
+    font-family: sans-serif;
     line-height: 1.5;
     font-size: small;
 }
@@ -218,7 +207,7 @@ p {
 #introduction {
     margin: 0 auto;
     width: 100%;
-    
+
 }
 
 .section .content {
@@ -232,7 +221,7 @@ p {
     align-items: center;
     justify-content: center;
     text-align: center;
-    
+
 }
 
 /* Position h1 and h4 absolutely within the content div */
@@ -330,28 +319,75 @@ h4 {
 }
 
 .availability-note {
-    
-    padding: 15px;
-    width: 50%;
+padding:50px;
+    width: 80%;
     text-align: center;
     margin: 0 auto;
-    background-color: #d43131;
-    color: #ffffff;
-    border: 1px solid ;
-    border-radius: 33px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /* background-color: #dbb5b5; */
+    color: #000000;
+    border: 10px double;
+    border-radius: 90px;
+    font-family: 'Times New Roman', Times, serif
 }
 
 .availability-note-container {
+    width: 80%;
     margin: 0 auto;
     display: inline-flex;
     justify-content: center;
-border: 2px solid ;
-border-radius: 15px;
-padding: 10px;
-padding-left: 0px ;
-margin: 10px;
-box-shadow: 4px 4px rgb(62, 63, 62);
-background-color: #e6ffe6;
+    align-items: center;
+    /* border: 2px solid;
+    border-radius: 15px; */
+    /* padding: 10px;
+    padding-left: 0px;
+    padding-bottom: 0px; */
+    /* margin: 10px; */
+    /* box-shadow: 4px 4px rgb(62, 63, 62); */
+    /* background-color: #e6ffe6; */
 }
 
+/* Package Pricing Styles */
+.section-pricing {
+    padding: 50px;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+.pricing-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.pricing-option {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+}
+
+.pricing-option h3 {
+    margin-top: 0;
+}
+
+.pricing-option .price {
+    font-size: 24px;
+    color: #333;
+}
+
+.book-btn {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.book-btn:hover {
+    background-color: #555;
+}
