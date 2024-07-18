@@ -18,6 +18,7 @@
             <li><a href="#introduction">Introduction</a></li>
             <li><a href="#about-me">About Me</a></li>
             <li><a href="#reviews">Reviews</a></li>
+            <li><a href="#package">Prices</a></li>
             <li><a href="#contact">Contact</a></li>
             <li><a href="#events">Upcoming Events</a></li>
         </ul>
@@ -90,6 +91,26 @@
 
     </section>
 
+    <!-- CONTACT SECTION -->
+
+    <section class="section-contact" id="contact">
+
+        <div class="availability-note-container">
+            
+            <form class="contact-form">
+
+                <input type="text" id="name" name="name" required placeholder="Name">
+
+                <input type="email" id="email" name="email" required placeholder="Email">
+
+                <textarea id="message" name="message" rows="5" required
+                    placeholder="Write your message here..."></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+
+    </section>
+
 
     <!-- PACKAGE PLAN SECTION -->
 
@@ -130,25 +151,6 @@
 
     </section>
 
-    <!-- CONTACT SECTION -->
-
-    <section class="section-contact" id="contact">
-
-        <div class="availability-note-container">
-            
-            <form class="contact-form">
-
-                <input type="text" id="name" name="name" required placeholder="Name">
-
-                <input type="email" id="email" name="email" required placeholder="Email">
-
-                <textarea id="message" name="message" rows="5" required
-                    placeholder="Write your message here..."></textarea>
-                <button type="submit">Send Message</button>
-            </form>
-        </div>
-
-    </section>
 
     <!-- EVENT SECTION-->
 
@@ -175,8 +177,19 @@
             <a href="#!" class="invite-btn">Receive Invite</a>
         </div>
     </section>
+
+    <!-- Modal for Booking Consultation -->
+    <div id="booking-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="calendly-inline-widget" data-url="https://calendly.com/YOUR_CALENDLY_USERNAME/consultation" style="min-width:320px;height:630px;"></div>
+        </div>
+    
     </div>
+
+    <script src="asset/script.js"></script>
+    <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js"></script>
+
 </body>
-<script src="asset/script.js"></script>
 
 </html>
