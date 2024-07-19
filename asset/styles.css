@@ -2,20 +2,18 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    /* background-color: #33333388; */
 }
 
 .container {
     margin: 0 auto;
     padding: 20px;
-
 }
 
 .section {
     padding: 20px;
-    margin-bottom: 0px;
+    margin-bottom: 0;
     border: 1px solid #ccc;
-    border-radius: 10px, inset (3px 3px 3px purple);
+    border-radius: 10px;
 }
 
 .about-me {
@@ -24,23 +22,20 @@ body {
     background-image: url(/caregiver/asset/images/Ausome\ Life\ Coach/3.png);
 }
 
-/* CONTACT SECTION ---------------------------------------------------------------- */
-
+/* CONTACT SECTION */
 #contact {
-background-image: url(/caregiver/asset/images/Ausome\ Life\ Coach/contact1.png);
-margin: 10px;
-
+    background-image: url(/caregiver/asset/images/Ausome\ Life\ Coach/contact1.png);
+    margin: 10px;
+    border-radius: 10px;
 }
 
 .contact-form {
     padding: 12px;
     display: flex;
     flex-direction: column;
-    margin: 0 auto;
-    margin-left: 800px;
-
+    /* margin: 0 auto; */
+    margin-left: 980px;
 }
-
 
 .contact-form input,
 .contact-form textarea {
@@ -48,7 +43,7 @@ margin: 10px;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    width: 100%;
+    width: 80%;
     box-sizing: border-box;
 }
 
@@ -62,10 +57,7 @@ margin: 10px;
     cursor: pointer;
 }
 
-
 .contact-form button:hover {
-    margin: 10px;
-    padding: 10px;
     background-color: #632626;
     color: #fff;
     border: none;
@@ -73,11 +65,9 @@ margin: 10px;
     cursor: pointer;
 }
 
-
-
 .section-introduction {
     width: 100%;
-    padding: 0px;
+    padding: 0;
     font-size: smaller;
 }
 
@@ -109,12 +99,14 @@ margin: 10px;
     background-color: #575757;
 }
 
-/* #new-review {
-    width: 100%;
-} */
-
 .review-img {
-    width: 100%;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    border-radius: 15px;
+    box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.529);
 }
 
 .intro-img,
@@ -123,7 +115,6 @@ margin: 10px;
     height: 100%;
     box-shadow: 3px 3px 4px rgb(123, 135, 123);
 }
-
 
 .aboutMeCap {
     width: 100%;
@@ -138,16 +129,6 @@ margin: 10px;
     font-family: sans-serif;
     line-height: 1.5;
     font-size: small;
-}
-
-.container {
-    max-width: 100%;
-    margin: 0 auto;
-    padding: 20px;
-}
-
-.section {
-    margin-bottom: 20px;
 }
 
 .aboutMe-container {
@@ -207,7 +188,6 @@ p {
 #introduction {
     margin: 0 auto;
     width: 100%;
-
 }
 
 .section .content {
@@ -221,7 +201,6 @@ p {
     align-items: center;
     justify-content: center;
     text-align: center;
-
 }
 
 /* Position h1 and h4 absolutely within the content div */
@@ -237,22 +216,6 @@ p {
 .section .content h4 {
     top: 30%;
     /* Adjust as needed to position below the h1 */
-}
-
-.section-introduction {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-}
-
-
-.section-introduction {
-    /* Full viewport height */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
 }
 
 h1,
@@ -303,7 +266,6 @@ form {
     width: 45%;
     justify-content: center;
     margin: 0 auto;
-
 }
 
 h4 {
@@ -311,7 +273,6 @@ h4 {
     margin: 0 auto;
     padding: 30px;
 }
-
 
 /* Package Pricing Styles */
 .section-pricing {
@@ -327,6 +288,10 @@ h4 {
     gap: 20px;
 }
 
+#reviews {
+    margin: 50px;
+}
+
 .pricing-option {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #fff;
@@ -339,8 +304,13 @@ h4 {
     margin: 0 auto;
 }
 
+.pricing-option:hover {
+    box-sizing: content-box;
+}
+
 .pricing-option h3 {
     margin-top: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .pricing-option .price {
@@ -355,12 +325,12 @@ h4 {
     padding: 10px 20px;
     cursor: pointer;
     border-radius: 5px;
+    box-shadow: 3px 3px 8px rgb(95, 103, 53);
 }
 
 .book-btn:hover {
     background-color: #555;
 }
-
 
 /* Modal Styles */
 .modal {
@@ -372,7 +342,7 @@ h4 {
     width: 100%;
     height: 100%;
     overflow: auto;
-    background-color: rgba(0,0,0,0.4);
+    background-color: rgba(0, 0, 0, 0.4);
 }
 
 .modal-content {
