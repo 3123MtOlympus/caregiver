@@ -9,9 +9,8 @@ document.querySelectorAll('.navbar a').forEach(anchor => {
     });
 });
 
-// Book Consultation Button
 document.querySelector('.book-btn').addEventListener('click', function() {
-    alert('Book Consultation button clicked!');
+    Calendly.initPopupWidget({ url: 'https://calendly.com/ausomelifecoachcarter/free-consultation' });
 });
 
 // Event Invite Buttons

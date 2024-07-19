@@ -4,8 +4,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap" rel="stylesheet">
     
     <link rel="stylesheet" href="asset/styles.css">
@@ -13,7 +11,7 @@
 </head>
 
 <body>
-
+ 
     <!-- NAV BAR -->
     <nav class="navbar" id="roboto-flex-navbar">
         <ul>
@@ -61,7 +59,8 @@
                     </div>
                 </div>
             </div>
-            <button class="book-btn">Book Consultation</button>
+            <button id="book-consultation-btn" class="book-btn">Book Consultation</button>
+
         </div>
     </section>
 
@@ -77,25 +76,25 @@
             <div class="pricing-option">
                 <h3>Consultation Session</h3>
                 <p>15 Minute Session</p>
-                <p class="price">Free</p>
+                
                 <button class="book-btn" onclick="bookIndividualSession()">Book Individual Session</button>
             </div>
             <div class="pricing-option">
                 <h3>Guest Session</h3>
                 <p>30 Minute Session</p>
-                <p class="price">$95/session</p>
+               
                 <button class="book-btn" onclick="bookIndividualSession()">Book Individual Session</button>
             </div>
             <div class="pricing-option">
                 <h3>Member Package</h3>
                 <p>4 One-Hour Sessions per Month</p>
-                <p class="price">$500/month</p>
+                
                 <button class="book-btn" onclick="bookMonthlyPackage()">Purchase Monthly Package</button>
             </div>
             <div class="pricing-option">
                 <h3>Emergency Session</h3>
                 <p>Available for Current Members Only</p>
-                <p class="price">$250</p>
+                
                 <button class="book-btn" onclick="bookEmergencySession()">Book Emergency Session</button>
             </div>
         </div>
@@ -110,6 +109,32 @@
                 <textarea id="message" name="message" rows="5" required placeholder="Write your message here..."></textarea>
                 <button type="submit">Send Message</button>
             </form>
+            
+             <script>
+                document.getElementById('contact-form').addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    const name = document.getElementById('name').value;
+                    const email = document.getElementById('email').value;
+                    const message = document.getElementById('message').value;
+        
+                    fetch('http://localhost:3000/send-email', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json',
+                        },
+                        body: JSON.stringify({ name, email, message }),
+                    })
+                    .then(response => response.text())
+                    .then(data => {
+                        alert(data);
+                        document.getElementById('contact-form').reset();
+                    })
+                    .catch(error => {
+                        console.error('Error:', error);
+                        alert('An error occurred. Please try again later.');
+                    });
+                });
+            </script>
         </div>
     </section>
 
