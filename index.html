@@ -4,6 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap" rel="stylesheet">
+    
     <link rel="stylesheet" href="asset/styles.css">
     <title>Autism Life Coach</title>
 </head>
@@ -11,14 +15,13 @@
 <body>
 
     <!-- NAV BAR -->
-    <nav class="navbar">
+    <nav class="navbar" id="roboto-flex-navbar">
         <ul>
-            <li><a href="#introduction">Introduction</a></li>
             <li><a href="#about-me">About Me</a></li>
             <li><a href="#reviews">Reviews</a></li>
             <li><a href="#pricing">Prices</a></li>
             <li><a href="#contact">Contact</a></li>
-            <li><a href="#events">Upcoming Events</a></li>
+            <!-- <li><a href="#events">Upcoming Events</a></li> -->
         </ul>
     </nav>
 
@@ -46,6 +49,9 @@
                         My coaching philosophy centers on "highlighting abilities" rather than focusing on disabilities. I firmly believe in emphasizing what can be accomplished, fostering an environment of empowerment and positivity. By concentrating on the strengths and potential of each individual, I aim to help them reach their fullest potential and lead fulfilling lives.
                     </p>
                     <p id="about-me-paragraph">
+                        Integrating my personal trainer experience with life coaching has allowed me to adopt a holistic approach to client well-being, recognizing that true health extends beyond physical fitness. As a personal trainer, I gained deep insights into the unique physical capabilities and limitations of each client, understanding their physical needs and designing tailored exercise programs to help them achieve their fitness goals. Transitioning into life coaching, I leveraged this knowledge to address not only the physical aspects but also the mental and emotional dimensions of my clients' lives. I focus on understanding their broader aspirations, challenges, and motivations, enabling me to provide comprehensive guidance that promotes overall well-being. My goal is to help clients maintain their current health, improve their physical and mental capabilities, and increase their overall quality of life. By combining physical training with life coaching, I offer a balanced and integrative approach that supports clients in achieving a healthier, more fulfilling life.
+                    </p>
+                    <p id="about-me-paragraph">
                         As a dedicated life coach for children and adults with autism, I leverage my extensive experience and specialized training to provide tailored support that meets the unique needs of each individual. My approach is centered on fostering personal growth and independence through structured, empathetic, and strengths-based coaching. By highlighting abilities rather than focusing on limitations, I empower my clients to achieve their fullest potential. I work closely with families, educators, and other support systems to create a cohesive and nurturing environment. Whether through personalized fitness programs, social skills training, or academic support, I am committed to enhancing the quality of life for my clients, promoting self-confidence, and facilitating meaningful progress in their personal and social development.
                     </p>
                     <div class="aboutMeImgCap">
@@ -59,30 +65,19 @@
         </div>
     </section>
 
-    <!-- REVIEW SECTION -->
-    <section class="section-reviews" id="reviews">
-        <img class="review-img" src="asset/images/Ausome Life Coach/reviews1.png">
-    </section>
-
-    <!-- CONTACT SECTION -->
-    <section class="section-contact" id="contact">
-        <div class="availability-note-container">
-            <form class="contact-form">
-                <input type="text" id="name" name="name" required placeholder="Name">
-                <input type="email" id="email" name="email" required placeholder="Email">
-                <textarea id="message" name="message" rows="5" required placeholder="Write your message here..."></textarea>
-                <button type="submit">Send Message</button>
-            </form>
-        </div>
-    </section>
+        <!-- REVIEW SECTION -->
+        <section class="section-reviews" id="reviews">
+            <img class="review-img" src="asset/images/Ausome Life Coach/reviews1.png">
+        </section>
 
     <!-- PACKAGE PLAN SECTION -->
     <section id="pricing" class="section-pricing">
         <h2>Package Pricing</h2>
         <div class="pricing-container">
             <div class="pricing-option">
-                <h3>Free Consultation Session</h3>
+                <h3>Consultation Session</h3>
                 <p>15 Minute Session</p>
+                <p class="price">Free</p>
                 <button class="book-btn" onclick="bookIndividualSession()">Book Individual Session</button>
             </div>
             <div class="pricing-option">
@@ -106,8 +101,21 @@
         </div>
     </section>
 
+    <!-- CONTACT SECTION -->
+    <section class="section-contact" id="contact">
+        <div class="availability-note-container">
+            <form class="contact-form">
+                <input type="text" id="name" name="name" required placeholder="Name">
+                <input type="email" id="email" name="email" required placeholder="Email">
+                <textarea id="message" name="message" rows="5" required placeholder="Write your message here..."></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+
     <!-- EVENT SECTION -->
-    <section id="events" class="section-events">
+    <!-- <section id="events" class="section-events">
         <h2>Upcoming Events</h2>
         <div class="event">
             <h3>Ausome Fitness Halloween</h3>
@@ -127,19 +135,22 @@
             <p>Description of the event goes here. This event aims to provide valuable insights and networking opportunities.</p>
             <a href="#!" class="invite-btn">Receive Invite</a>
         </div>
-    </section>
+    </section> -->
 
     <!-- Modal for Booking Consultation -->
     <div id="booking-modal" class="modal">
         <div class="modal-content">
             <span class="close">&times;</span>
-            <div class="calendly-inline-widget" data-url="https://calendly.com/ausomelifecoachcarter" style="min-width:320px;height:630px;"></div>
+            <div class="calendly-inline-widget" data-url="https://calendly.com/ausomelifecoachcarter" style="min-width:320px;height:630px;">Let's Meet</div>
         </div>
     </div>
-
+    
     <script src="asset/script.js"></script>
     <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js"></script>
 
 </body>
+
+<button id="back-to-top" title="Back to top">↑</button>
+
 
 </html>
